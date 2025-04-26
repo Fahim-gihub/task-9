@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+.container {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+@theme {
+    --color-pink: #FFD4D0;
+    --color-dark: #1F1F1F;
+    --color-red: #FC3314;
+    --color-gray: #F7F7F7;
+}
+
+
+.red-circle:before {
+    content: '';
+    @apply w-[146px] h-[146px] bg-red rounded-full -z-1;
+}
+
+.red-circle-1:before {
+    content: '';
+    @apply w-[234px] h-[234px] bg-red rounded-full -z-1;
+}
+
+.red-circle-2:before {
+    content: '';
+    @apply w-[221px] h-[221px] bg-red rounded-full -z-1;
+}
+
+.red-circle-3:before {
+    content: '';
+    @apply w-[122px] h-[122px] bg-red rounded-full -z-1;
+}
+
+.arrow-bg {
+    @apply w-8 h-8 rounded-full bg-[#fc3314];
+}
+
+
+
+.testimonials-carousel > svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -40px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.testimonials-carousel > svg:first-child {
+    left: -40px;
+}
